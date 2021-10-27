@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-
+const expressLayouts = require("express-ejs-layouts");
 const admin = [
   {
     username: "moehzi",
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use("/assets", express.static("public"));
 
 app.set("view engine", "ejs");
-
+app.use(expressLayouts);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
@@ -30,6 +30,7 @@ const authTokens = {};
 app.get("/login", (req, res) => {
   res.render("login", {
     message: false,
+    layout: false,
   });
 });
 
@@ -52,12 +53,25 @@ const requireAuth = (req, res, next) => {
     res.render("login", {
       message: "Please login to continue",
       messageClass: "alert-danger",
+      layout: false,
     });
   }
 };
 
 app.get("/dashboard", requireAuth, (req, res) => {
-  res.render("dashboard");
+  const url = req.url;
+  res.render("dashboard", {
+    layout: "layouts/main-layout",
+    title: "Dashboard",
+    page_name: "dashboard",
+  });
+});
+
+app.get("/users", requireAuth, (req, res) => {
+  res.render("user", {
+    layout: "layouts/main-layout",
+    page_name: "users",
+  });
 });
 
 app.listen(PORT, () => console.log(`app listening on port localhost:${PORT}`));
@@ -71,6 +85,7 @@ function checkCredentials(req, res, next) {
     res.render("login", {
       message: "Invalid username or password",
       messageClass: "alert-danger",
+      layout: false,
     });
   } else {
     const authToken = generateAuthToken();

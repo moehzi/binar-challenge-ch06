@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("head.ejs"); %>
+
+<body>
+	<div id="app">
+		<div id="main">
+			<header class="mb-3">
+				<a href="#" class="burger-btn d-block d-xl-none">
+					<i class="bi bi-justify fs-3"></i>
+				</a>
+			</header>
+			<%- include("sidebar.ejs"); %>
+			<%-body%>
+			<%- include("footer.ejs"); %>
+		</div>
+	</div>
+	<script src="assets/src/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script src="assets/src/js/bootstrap.bundle.min.js"></script>
+
+	<script src="assets/src/vendors/apexcharts/apexcharts.js"></script>
+	<script src="assets/src/js/pages/dashboard.js"></script>
+
+	<script src="assets/src/js/mazer.js"></script>
+	<script src="assets/vendors/jquery/jquery.min.js"></script>
+	<script src="assets/vendors/jquery-datatables/jquery.dataTables.min.js"></script>
+	<script src="assets/vendors/jquery-datatables/custom.jquery.dataTables.bootstrap5.min.js"></script>
+	<script src="assets/vendors/fontawesome/all.min.js"></script>
+	<script>
+		// Jquery Datatable
+		let jquery_datatable = $("#table1").DataTable()
+	</script>
+</body>
+
+</html>
