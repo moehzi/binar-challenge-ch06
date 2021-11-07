@@ -1,4 +1,4 @@
-﻿# My Hackerrank Journey
+﻿# Binar Challenge Chapter 6
 
 ### Table of Contents
 
