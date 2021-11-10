@@ -1,8 +1,37 @@
 {
   "name": "binar-challenge-chap6",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000b\u0000i\u0000n\u0000a\u0000r\u0000-\u0000c\u0000h\u0000a\u0000l\u0000l\u0000e\u0000n\u0000g\u0000e\u0000-\u0000c\u0000h\u00000\u00006\u0000\r\u0000 \u0000",
+  "description": "You're sections headers will be used to reference location of destination.",
   "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "forwarded": "^0.2.0",
+    "fresh": "^0.5.2",
+    "fs.realpath": "^1.0.0",
+    "fsevents": "^2.3.2",
+    "function-bind": "^1.1.1",
+    "get-caller-file": "^2.0.5",
+    "graceful-fs": "^4.2.8",
+    "has": "^1.0.3",
+    "has-flag": "^3.0.0",
+    "has-yarn": "^2.1.0",
+    "http-cache-semantics": "^4.1.0",
+    "ignore-by-default": "^1.0.1",
+    "import-lazy": "^2.1.0",
+    "imurmurhash": "^0.1.4",
+    "inherits": "^2.0.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
     "start": "node index.js",
     "develop": "nodemon -L index.js"
@@ -17,19 +46,5 @@
   "bugs": {
     "url": "https://github.com/moehzi/binar-challenge-ch06/issues"
   },
-  "homepage": "https://github.com/moehzi/binar-challenge-ch06#readme",
-  "dependencies": {
-    "cookie-parser": "^1.4.5",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.1",
-    "express-session": "^1.17.2",
-    "pg": "^8.7.1",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15",
-    "sequelize-cli": "^6.3.0"
-  }
+  "homepage": "https://github.com/moehzi/binar-challenge-ch06#readme"
 }
