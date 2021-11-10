@@ -24,6 +24,7 @@ function checkCredentials(req, res, next) {
       message: "Invalid username or password",
       messageClass: "alert-danger",
       layout: false,
+      title: "Login",
     });
   } else {
     const authToken = generateAuthToken();
@@ -45,6 +46,7 @@ function requireAuth(req, res, next) {
       message: "Please login to continue",
       messageClass: "alert-danger",
       layout: false,
+      title: "Login",
     });
   }
 }

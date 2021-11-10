@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "moehzi",
+    "password": "mantap098",
+    "database": "binar-ch-06_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "moehzi",
+    "password": "mantap098",
+    "database": "binar-ch-06_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

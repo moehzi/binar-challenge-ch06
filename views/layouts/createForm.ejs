@@ -1,0 +1,47 @@
+<div class="modal fade text-left" id="inlineForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel33">Create Data </h4>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<i data-feather="x"></i>
+				</button>
+			</div>
+			<form action="/users/new" method="POST">
+				<div class="modal-body">
+					<label>Name: </label>
+					<div class="form-group">
+						<input type="text" placeholder="Name" class="form-control" name="name" required>
+					</div>
+					<label>Email: </label>
+					<div class="form-group">
+						<input type="email" placeholder="Email Address" class="form-control" name="email" required>
+					</div>
+					<label>Address: </label>
+					<div class="form-group">
+						<input type="textarea" placeholder="Address" class="form-control" name="address" required>
+					</div>
+					<label>Nickname: </label>
+					<div class="form-group">
+						<input type="text" placeholder="Nickname" class="form-control" name="nickname" required>
+					</div>
+					<label>Playtime: </label>
+					<div class="form-group">
+						<input type="number" placeholder="Playtime" class="form-control" name="playTime" required>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light-secondary" data-bs-dismiss="modal">
+						<i class="bx bx-x d-block d-sm-none"></i>
+						<span class="d-none d-sm-block">Close</span>
+					</button>
+					<button type="submit" class="btn btn-primary ml-1">
+						<i class="bx bx-check d-block d-sm-none"></i>
+						<span class="d-none d-sm-block">Create</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,55 @@
+<div class="page-heading">
+	<div class="page-title">
+		<div class="row">
+			<div class="col-12 col-md-6 order-md-1 order-last">
+				<h3>List of games</h3>
+				<p class="text-subtitle text-muted">List of games who registered in database</p>
+			</div>
+			<div class="col-12 col-md-6 order-md-2 order-first">
+				<nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/index">Dashboard</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Games</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- Basic Tables start -->
+	<section class="section">
+		<div class="card">
+			<div class="card-header d-flex justify-content-between align-items-center">
+				Tabel of games
+			</div>
+			<div class="card-body">
+				<table class="table" id="table1">
+					<thead>
+						<tr>
+							<th>Nickname</th>
+							<th>Player Select</th>
+							<th>Com Select</th>
+							<th>Winner</th>
+							<th>Played At</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<%userGames.forEach(({Game,User,id})=>{ %>
+						<tr>
+							<td class="d-none"><%= id %></td>
+							<td><%= User.nickname %></td>
+							<td><%= Game.playerSelect %></td>
+							<td><%= Game.comSelect %></td>
+							<td><%= Game.winner%></td>
+							<td><%= Game.playedAt%></td>
+						</tr>
+						<%})%>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</section>
+	<!-- Basic Tables end -->
+</div>

@@ -3,7 +3,7 @@
 		<div class="sidebar-header">
 			<div class="d-flex justify-content-between">
 				<div class="logo">
-					<a href="index.html"><img src="assets/src/images/logo/logo.png" alt="Logo" srcset=""></a>
+					<a href="/"><img src="/public/src/images/logo/logo.png" alt="Logo" srcset=""></a>
 				</div>
 				<div class="toggler">
 					<a href="#" class="sidebar-hide d-xl-none d-block"><i class="fa-solid fa-xmark"></i></a>
@@ -25,6 +25,19 @@
 					<a href="/users" class='sidebar-link'>
 						<i class="fa-solid fa-users"></i>
 						<span>Users</span>
+					</a>
+				</li>
+				<li <% if (page_name === 'games') { %>class="sidebar-item active" <%} else { %>class="sidebar-item"
+					<% } %>>
+					<a href="/games" class='sidebar-link'>
+						<i class="fa-solid fa-users"></i>
+						<span>Games</span>
+					</a>
+				</li>
+				<li class="sidebar-item">
+					<a href="/logout" class='sidebar-link'>
+						<i class="fa-solid fa-power-off"></i>
+						<span>Logout</span>
 					</a>
 				</li>
 			</ul>
