@@ -1,4 +1,4 @@
-﻿# Binar Challenge Chapter 6
+﻿# Dashboar Admin with RestFulAPI
 
 ### Table of Contents
 
