@@ -65,11 +65,3 @@ npm run develop
 
 - Open Browser and go to http://localhost:5000
 
-
-
-
-
-
-## Author Info
-
-- Instagram - [@muhnurfaizi](https://www.instagram.com/muhnurfaizi/)
